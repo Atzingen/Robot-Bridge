@@ -29,6 +29,9 @@ class EbotBoard():
         self.btn2_pin = btn2_pin
         self.btn3_pin = btn3_pin
         self.qtr_pins = qtr_pins
+        self.btn1 = Pin(self.btn1_pin, Pin.PULL_DOWN)
+        self.btn2 = Pin(self.btn2_pin, Pin.PULL_DOWN)
+        self.btn3 = Pin(self.btn3_pin, Pin.PULL_DOWN)
         self.start_lcd()
         self.clear_lcd()
         time.sleep(2)
@@ -49,14 +52,14 @@ class EbotBoard():
         self.display.text(txt, 0, 15*linha + 2, 1)
         self.display.show()
 
-    def botao1(self):
-        pass  #TODO implementar instancia e metodos de leitura automaticos aqui para facilidar
+    def ler_botao1(self):
+        return self.btn1.value()
 
-    def botao2(self):
-        pass  #TODO implementar instancia e metodos de leitura automaticos aqui para facilidar
+    def ler_botao2(self):
+        return self.btn2.value()
 
-    def botao3(self):
-        pass  #TODO implementar instancia e metodos de leitura automaticos aqui para facilidar
+    def ler_botao3(self):
+        return self.btn3.value()
 
     def qtr8(self):
         pass  #TODO Implementar biblioteca do qtr8

@@ -26,5 +26,8 @@
     ],
     "files.associations": {
         ".mpyproject.json": "jsonc"
-    }
+    },
+    "python.analysis.extraPaths": [
+        "c:/Users/gustavo/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.8/microExamples/code-completion"
+    ]
 }
