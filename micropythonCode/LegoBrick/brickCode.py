@@ -23,6 +23,9 @@ from time import sleep_ms
 from micropython import const
 from machine import Timer
 
+# isso fica no teste
+
+
 _CONNECT_IMAGES = [
     Image('03579:00000:00000:00000:00000'),
     Image('00357:00000:00000:00000:00000'),
